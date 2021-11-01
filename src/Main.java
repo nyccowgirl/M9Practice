@@ -22,7 +22,7 @@ public class Main {
         }
     }
 
-    public static <T extends Comparable<T>> int countGreaterThan(T[] list, T benchmark) {
+    public static <T extends Comparable<? super T>> int countGreaterThan(T[] list, T benchmark) {
         int count = 0;
 
         for (T item : list) {
